@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Step Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <form action="#" class="form" id="form">
+        <h2 class="text-center">Sign up Form</h2>
+
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+            <div class="progress-step active" data-title="Name"></div>
+            <div class="progress-step" data-title="Contact"></div>
+            <div class="progress-step" data-title="Passport"></div>
+        </div>
+
+        <div class="form-step active">
+            <div class="input-group">
+                <label for="name">Name</label>
+                <div class="row">
+                    <input type="text" name="fname" id="fname" placeholder="First Name">
+                    <input type="text" name="lname" id="lname" placeholder="Last Name">
+                </div>
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" id="dob">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="Email">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="father-name">Fathers Name</label>
+                <div class="row">
+                    <input type="text" name="father-fname" id="father-fname" placeholder="First Name">
+                    <input type="text" name="father-lname" id="father-lname" placeholder="Last Name">
+                </div>
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="mother-name">Mothers Name</label>
+                <div class="row">
+                    <input type="text" name="mother-fname" id="mother-fname" placeholder="First Name">
+                    <input type="text" name="mother-lname" id="mother-lname" placeholder="Last Name">
+                </div>
+                <div class="error"></div>
+            </div>
+            <!-- <div class="input-group">
+                <label for="lname">Gender</label>
+                <input type="radio" name="lname" id="lname"> Male
+                <input type="radio" name="lname" id="lname"> Female
+            </div> -->
+            <div class="input-group">
+                <label for="nation">Nationality</label>
+                <input type="text" name="nation" id="nation">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="home-add">Home Address</label>
+                <input type="text" name="street" id="street" placeholder="Street">
+                <div class="row">
+                    <input type="text" name="city" id="city" placeholder="City">
+                    <input type="text" name="country" id="country" placeholder="Country">
+                </div>
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="h-phone">Telephone - Home</label>
+                <input type="text" name="h-phone" id="h-phone">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="mobile">Telephone - Mobile</label>
+                <input type="text" name="mobile" id="mobile">
+                <div class="error"></div>
+            </div>
+            <div class="">
+                <a href="#" class="btn btn-next width-50 ml-auto" id="first-page">Next</a>
+            </div>
+        </div>
+
+        <div class="form-step">
+            <div class="input-group">
+                <label for="inst">HSC Institute Name</label>
+                <input type="text" name="inst" id="inst-name" placeholder="Institution Name">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="board">HSC Board</label>
+                <input type="text" name="board" id="hsc-board" placeholder="Board">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="board">HSC Score</label>
+                <input type="text" name="board" id="hsc-score" placeholder="Score in %">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="board">SSC Institute Name</label>
+                <input type="text" name="board" id="ssc-inst-name" placeholder="SSC Name">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="board">SSC Board</label>
+                <input type="text" name="board" id="ssc-board" placeholder="Board">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="board">SSC Score</label>
+                <input type="text" name="board" id="ssc-score" placeholder="Score in %">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="board">Currently Pursuing</label>
+                <input type="text" name="board" id="current-edu" placeholder="Currently Pursuing">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="board">Current Educational Institution Name</label>
+                <input type="text" name="board" id="current-edu-inst" placeholder="Current Educational Institution">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="board">Overall Percentage</label>
+                <input type="text" name="board" id="total-perc" placeholder="Overall Percentage">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="board">Current Backlog if any</label>
+                <input type="text" name="board" id="backlog" placeholder="Current Backlog if any">
+                <div class="error"></div>
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-prev">Prev</a>
+                <a href="#" class="btn btn-next" id="second-page">Next</a>
+            </div>
+        </div>
+
+        <div class="form-step">
+            <div class="input-group">
+                <label for="inst">Passport Photo</label>
+                <input type="file" name="inst" id="passport-image">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="board">HSC Marksheet</label>
+                <input type="file" name="board" id="hsc-mark-img">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="board">SSC Marksheet</label>
+                <input type="file" name="board" id="ssc-mark-img">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="board">All Semester Marksheet</label>
+                <input type="file" name="board" id="sem-img" multiple>
+                <div class="error"></div>
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-prev">Prev</a>
+                <a href="#" class="btn" id="third-page">Submit</a>
+            </div>
+        </div>
+    </form>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
